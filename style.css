@@ -15,3 +15,123 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
+
+
+body {
+    background: #352f5b;
+    font-family: Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.container {
+    width: 400px;
+    margin: 0px auto;
+    padding: 0px 15px;    
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    margin: 45px 0px 45px 0px;
+    color: #fff;
+    /* display: block; */
+}
+
+.header-title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.form-search {
+    color: #fff;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin: auto;
+    transition: none;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.todos {
+    margin: 0px 0px 30px 0px;
+}
+
+input[type=text],
+input[type=text]:focus{
+  color: #fff;
+  border: none;
+  background: rgba(0,0,0,0.2);
+  max-width: 400px;
+}
+
+.list-todos {
+    color: #f8f9fa;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-todos li {
+    display: flex;
+    background: #423a6f;
+    border-radius: 5px;    
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 10px 15px;
+    margin-bottom: -1px;
+}
+
+.icon-delete {
+    cursor: pointer;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.add-todo-body {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.add-todo {    
+    text-align: center;
+    margin: 25px 0px;
+}
+
+.add-todo-text {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.add-todo-body {    
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+    margin: auto;
+    transition: none;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    height: 35px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}

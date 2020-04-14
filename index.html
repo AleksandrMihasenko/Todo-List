@@ -4,40 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     
-    <header class="header">
-        <div class="container">
-            <h1 class="header-title">Todo List</h1>
-            <form class="search">
-                <input class="form-search" type="text" name="search" placeholder="search todos">
-            </form>
+    <div class="row">
+
+        <header class="header">
+            <div class="container">
+                <h1 class="header-title">Todo List</h1>
+                <form class="search">
+                    <input class="form-search" type="text" name="search" placeholder="search todos">
+                </form>
+            </div>
+        </header>
+
+        <section class="todos">
+            <div class="container">
+                <ul class="list-todos">
+                    <li class="list-todos-item">
+                        <span>play mariokart</span>
+                        <span class="icon-delete"><img src="/img/trash-alt-solid.svg" alt="trash-icon"></span>                
+                    </li>
+                    <li class="list-todos-item">
+                        <span>defeat ganon in zelda</span>
+                        <span class="icon-delete "></span>                
+                    </li>
+                    <li class="list-todos-item">
+                        <span>make a veggie pie</span>
+                        <span class="icon-delete"></span>                
+                    </li>
+                </ul>
         </div>
-    </header>
+        </section>
 
-    <section class="todos">
-        <ul class="list-todos">
-            <li class="list-todos-item">
-                <span>play mariokart</span>
-                <span class="icon-delete"></span>                
-            </li>
-            <li class="list-todos-item">
-                <span>defeat ganon in zelda</span>
-                <span class="icon-delete"></span>                
-            </li>
-            <li class="list-todos-item">
-                <span>make a veggie pie</span>
-                <span class="icon-delete"></span>                
-            </li>
-        </ul>
-    </section>
-
-    <section class="add-todo">
-        <form action="add-todo-form">
-            <label class="add-todo-text" for="">Add a new todo...</label>
-            <input class="add-todo-body" type="text" name="add">
-        </form>
-    </section>
+        <section class="add-todo">
+            <div class="container">
+                <form action="add-todo-form">
+                    <label class="add-todo-text" for="">Add a new todo...</label>
+                    <input class="add-todo-body" type="text" name="add">
+                </form>
+            </div>
+        </section>
+        
+    </div>
 </body>
 </html>
