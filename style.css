@@ -97,7 +97,11 @@ input[type=text]:focus{
 }
 
 .icon-delete {
+    
+    width: 15px;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 label {
