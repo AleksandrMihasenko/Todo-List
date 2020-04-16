@@ -1,6 +1,6 @@
 const list = document.querySelector('.list-todos');
 const addTodo = document.querySelector('.add');
-const search = document.querySelector('.form-search');
+const search = document.querySelector('.search input');
 
 const generateTemplate = todo => {
     const html = `
@@ -10,6 +10,22 @@ const generateTemplate = todo => {
         </li>
     `;
     list.innerHTML += html;
+};
+
+
+const filterTodos = function(term) {
+
+    //add filtered class
+    Array.from(list.children)
+    .filter(todo => !todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.add('filtered'));
+
+    //remove filtered class
+    Array.from(list.children)
+    .filter(todo => todo.textContent.toLowerCase().includes(term))
+    .forEach(todo => todo.classList.remove('filtered'));
+
+    
 };
 
 
@@ -34,5 +50,14 @@ addTodo.addEventListener('submit', event => {
         generateTemplate(todo);
         addTodo.reset();
     }
+
+});
+
+
+//filter todos event
+search.addEventListener('keyup', event => {
+    
+    const term = search.value.trim().toLowerCase();
+    filterTodos(term);    
 
 });
